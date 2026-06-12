@@ -11,31 +11,34 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    overflow:hidden;
+    padding:20px;
+    overflow-x:hidden;
     color:white;
 }
 
 .container{
-    text-align:center;
+    width:100%;
     max-width:700px;
-    padding:20px;
+    text-align:center;
     z-index:2;
+    padding-bottom:100px;
 }
 
-h1{
-    margin-bottom:15px;
+.screen{
+    display:none;
 }
 
-.subtitle{
+.screen.active{
+    display:block;
+}
+
+h1,h2{
     margin-bottom:20px;
 }
 
-.card{
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(10px);
-    padding:25px;
-    border-radius:20px;
-    line-height:1.8;
+p{
+    margin-bottom:15px;
+    line-height:1.7;
 }
 
 button{
@@ -45,29 +48,39 @@ button{
     border-radius:30px;
     background:white;
     color:#ff4f81;
-    font-size:16px;
     cursor:pointer;
-    transition:.3s;
+    font-size:16px;
 }
 
 button:hover{
     transform:scale(1.05);
 }
 
+pre{
+    background:rgba(0,0,0,0.25);
+    padding:20px;
+    border-radius:15px;
+    text-align:left;
+    overflow-x:auto;
+    margin-top:20px;
+}
+
+#terminal{
+    background:black;
+    color:#00ff00;
+    text-align:left;
+    padding:20px;
+    border-radius:15px;
+    min-height:250px;
+    font-family:monospace;
+}
+
 .hidden{
     display:none;
 }
 
-#mensagemFinal{
-    margin-top:25px;
-    background:rgba(255,255,255,0.15);
-    padding:20px;
-    border-radius:20px;
-}
-
 .heart{
     position:absolute;
-    color:white;
     animation:fall linear forwards;
 }
 
@@ -75,7 +88,35 @@ button:hover{
     from{
         transform:translateY(-100px);
     }
+
     to{
         transform:translateY(110vh);
     }
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    pre{
+        font-size:13px;
+    }
+}
+
+#musicaPrincipal{
+    margin-top: 40px;
+}
+
+#playlist{
+    margin-top: 40px;
+}
+
+#mensagemFinal{
+    margin-top: 40px;
 }
