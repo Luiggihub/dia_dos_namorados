@@ -11,56 +11,201 @@
     <div class="hearts"></div>
 
     <div class="container">
-        <h1>Feliz Dia dos Namorados ❤️</h1>
 
-        <p class="subtitle">
-            Mesmo que a distância exista, eu não queria deixar essa data passar em branco.
-        </p>
-
-        <div class="card">
-            <p>
-                Eu sei que a gente ainda não se conheceu pessoalmente,
-                e justamente por isso não quero apressar nada.
-            </p>
-
-            <p>
-                Mas também não queria esconder o quanto você se tornou
-                importante para mim.
-            </p>
-
-            <p>
-                Gosto das nossas conversas, das risadas, dos momentos
-                aleatórios e da forma como você consegue deixar meus dias melhores.
-            </p>
-
-            <p>
-                Quero que as coisas aconteçam no tempo certo.
-                Quero poder te conhecer de verdade, criar memórias ao seu lado
-                e viver tudo isso pessoalmente.
-            </p>
-
-            <p>
-                Obrigado por fazer parte da minha vida. ❤️
-            </p>
+        <!-- Tela 1 -->
+        <div class="screen active" id="screen1">
+            <h1>Para Kauany ❤️</h1>
+            <p>Eu não queria deixar essa data passar em branco.</p>
+            <button onclick="nextScreen(2)">Abrir mensagem 💌</button>
         </div>
 
-        <button onclick="mostrarMensagem()">
-            Tem mais uma coisa...
-        </button>
+        <!-- Tela 2 -->
+        <div class="screen" id="screen2">
+            <h2>💌</h2>
+            <p>
+                Eu pensei em simplesmente te mandar uma mensagem.
+            </p>
 
-        <div id="mensagemFinal" class="hidden">
+            <p>
+                Mas como gosto de programação, achei que seria mais legal fazer algo diferente.
+            </p>
+
+            <button onclick="nextScreen(3)">Continuar...</button>
+        </div>
+
+        <!-- Tela 3 -->
+        <div class="screen" id="screen3">
             <h2>❤️</h2>
+
             <p>
-                Não sei exatamente o que o futuro reserva para nós,
-                mas sei que fico feliz por ter você na minha vida.
+                Eu sei que a gente ainda não se conheceu pessoalmente.
             </p>
 
             <p>
-                E espero que isso seja apenas o começo de muitas histórias.
+                E justamente por isso não quero apressar as coisas.
             </p>
+
+            <p>
+                Mas também não queria esconder o quanto você se tornou importante para mim.
+            </p>
+
+            <button onclick="nextScreen(4)">Mais uma coisa...</button>
         </div>
+
+        <!-- Tela 4 -->
+        <div class="screen" id="screen4">
+
+            <h2>💻 Modo Programador</h2>
+
+            <pre>
+const voce = "especial";
+const distancia = true;
+
+while (distancia) {
+    continuar_conversando();
+}
+
+console.log("Espero te conhecer em breve ❤️");
+            </pre>
+
+            <button onclick="executarPrograma()">
+                Executar programa ❤️
+            </button>
+
+        </div>
+
+        <!-- Tela 5 -->
+        <div class="screen" id="screen5">
+
+            <div id="terminal">
+                <p>> Inicializando sistema...</p>
+            </div>
+<div id="musicaPrincipal" class="hidden">
+
+    <h2>🎵 Música para ouvir enquanto lê isso</h2>
+
+    <p class="playlist-subtitle">
+        A música que você me apresentou.
+        <br>
+        Desde então, sempre que eu escuto ela, lembro de você. ❤️
+    </p>
+
+    <iframe
+        data-testid="embed-iframe"
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/089jl361OtZ6VpYvhgPiTS?utm_source=generator&si=0c9b2b5012b842f2"
+        width="100%"
+        height="352"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+    </iframe>
+
+</div>
+
+<div id="playlist" class="hidden">
+
+    <h2>🎵 Algumas músicas que me lembram você</h2>
+
+    <p class="playlist-subtitle">
+        Depois dessa, aqui estão algumas músicas que,
+        por um motivo ou outro,
+        acabaram ficando associadas a você na minha cabeça. ❤️
+    </p>
+
+    <div class="music-card">
+        <h3>🎵 Ultraviolence</h3>
+        <p>Uma das primeiras que vem na cabeça quando penso em você.</p>
+        <button onclick="window.open('https://youtu.be/EJSk2RySqKg?si=E3km393tHOTTPsOW')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 Say Yes To Heaven</h3>
+        <p>Essa simplesmente precisava estar aqui.</p>
+        <button onclick="window.open('https://youtu.be/ppN-BOTKWbk?si=HD_5LswhdwPwHj7g')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 Young and Beautiful</h3>
+        <p>Bonita demais para ficar de fora.</p>
+        <button onclick="window.open('https://youtu.be/PaIelYw5pac?si=NwRHQJZNyyPBMdbj')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 Pretty When You Cry</h3>
+        <p>Mais uma da Lana que me faz lembrar de você.</p>
+        <button onclick="window.open('https://youtu.be/2CSWw2OVxio?si=kPaBBLhA58OtC-8e')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 Join Me In Death</h3>
+        <p>Você me apresentou essa, então é impossível ouvir sem lembrar de você.</p>
+        <button onclick="window.open('https://youtu.be/J4wWq9LlnRE?si=C0AB-gmPDpIuqfWD')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 Do I Wanna Know?</h3>
+        <p>Clássica. Não tinha como não colocar.</p>
+        <button onclick="window.open('https://youtu.be/wdo_ATH_ITg?si=XVdo95bAtUcou7-R')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 I Wanna Be Yours</h3>
+        <p>Outra que me lembra você instantaneamente.</p>
+        <button onclick="window.open('https://youtu.be/nyuo9-OjNNg?si=2zXpw2XhW_PrFVSL')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 Earrings</h3>
+        <p>Uma daquelas músicas que acabam ficando associadas a uma pessoa.</p>
+        <button onclick="window.open('https://youtu.be/a4tdS3IB294?si=kiz8huwvanztWotV')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 Reflections</h3>
+        <p>Não sei explicar, só me faz pensar em você.</p>
+        <button onclick="window.open('https://youtu.be/SjVM0mKLVLc?si=iUPglYBg6YfOw1df')">▶ Ouvir</button>
+    </div>
+
+    <div class="music-card">
+        <h3>🎵 Gucci Flip Flops x Careless Whisper</h3>
+        <p>Essa tinha que estar aqui. 😭❤️</p>
+        <button onclick="window.open('https://youtu.be/yf83EyzQySk?si=FrOWI6W0WUxelBgS')">▶ Ouvir</button>
+    </div>
+
+</div>
+            <div id="mensagemFinal" class="hidden">
+
+                <h2>❤️</h2>
+
+                <p>
+                    Não estou te pedindo em namoro.
+                </p>
+
+                <p>
+                    Acho que algumas coisas merecem acontecer pessoalmente.
+                </p>
+
+                <p>
+                    Mas eu queria que você soubesse que você é uma das pessoas mais especiais da minha vida.
+                </p>
+
+                <p>
+                    Obrigado por todas as conversas, risadas e momentos.
+                </p>
+
+                <p>
+                    Feliz Dia dos Namorados ❤️
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
